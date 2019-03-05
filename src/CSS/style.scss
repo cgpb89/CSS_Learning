@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./nav.scss";
+
+#header {
+  height: $header-height;
+}
+
+h1 {
+  font-size: $header-size;
+  color: $header-color;
+}
+h2 {
+  font-size: $header-size;
+  color: $header-size - 7px;
+}
+a {
+  color: $link-color;
+}
+
