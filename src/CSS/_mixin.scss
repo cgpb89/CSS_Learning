@@ -1,14 +1,13 @@
-@mixin horizontal-gradient($startColor: $link-color, $endColor: $nav-bg-color) {
-  background-color: $endColor;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColor), to($endColor));
-  background-image: -webkit-linear-gradient(left, $startColor, $endColor);
-  background-image: -moz-linear-gradient(left, $startColor, $endColor);
-  background-image: -ms-linear-gradient(left, $startColor, $endColor);
-  background-image: -o-linear-gradient(left, $startColor, $endColor);
-  background-image: linear-gradient(left, $startColor, $endColor);
-  background-repeat: repeat-x;
-}
-
 @mixin border-radius($round) {
   border-radius: $round;
+}
+
+@mixin number-columns($number-of-columns, $margin) {
+  width: ((100% - ($margin * ($number-of-columns))) / $number-of-columns);
+  margin-right: $margin;
+  margin-bottom: 10px;
+  padding: 10px;
+  &:nth-child(2n){
+    margin-left: 0;
+  }
 }
