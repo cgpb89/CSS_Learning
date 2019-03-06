@@ -1,6 +1,10 @@
 @import "./variables";
 @import "./nav.scss";
-
+@import "./mixin";
+@import "./placeholders";
+body {
+  margin: 0px;
+}
 #header {
   height: $header-height;
 }
@@ -17,3 +21,34 @@ a {
   color: $link-color;
 }
 
+p {
+  display: block;
+  @extend %center;
+}
+
+.container {
+  margin: 60px 10px 0px 10px;
+  border: solid 3px blue;
+  overflow: hidden;
+  height: 2000px;
+}
+
+section {
+  @extend %box-size;
+}
+
+article {
+  @extend %box-size;
+}
+
+header{
+  position: fixed;
+}
+
+#gallery-section{
+  clear: left;
+  margin: 60px 10px 0px 10px;
+  border: solid 3px blue;
+  overflow: hidden;
+  height: 200px;
+}
