@@ -11,3 +11,10 @@
     margin-left: 0;
   }
 }
+
+@mixin main-img-trans{
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+}
