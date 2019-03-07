@@ -6,49 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pagina CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#gallery-section">Whar are video courses?</a></li>
-                <li><a href="#">Web Development</a>
-                    <ul>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">PHP</a></li>
-                        <li><a href="#">MySQL</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Programming</a>
-                    <ul>
-                        <li><a href="#">C++</a></li>
-                        <li><a href="#">Java</a></li>
-                        <li><a href="#">C#</a></li>
-                        <li><a href="#">Java Script</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <nav class="topnav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#gallery-section">Whar are video courses?</a></li>
+            <li><a href="#">Web Development</a>
+                <ul>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">MySQL</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Programming</a>
+                <ul>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">C#</a></li>
+                    <li><a href="#">Java Script</a></li>
+                </ul>
+            </li>
+            <li  id="icon"> <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </li>
+        </ul>
+    </nav>
 </head>
 
 <body>
-    
-    <div class="container">
-        <p>
-            This is a web page test.
-        </p>
 
-        <section>
+    <div class="container">
+
+
+        <section class="">
+
+            <div class="column">
+                <a href="https://www.marvel.com/" target="blank"><img src="./src/images/marvel-logo.png" alt=""></a>
+            </div>
+
+            <div class="column">
+                <a href="https://www.dccomics.com/" target="blank"><img src="./src/images/dc-logo.png" alt=""></a>
+            </div>
+
+            <div class="column">
+                <a href="https://www.dccomics.com/" target="blank"><img src="./src/images/anime-logo.png" alt=""></a>
+            </div>
+
+            <div class="column">
+                <a href="https://www.crunchyroll.com/videos/anime" target="blank"><img
+                        src="./src/images/web-developer-logo.png" alt=""></a>
+            </div>
 
         </section>
 
-        <article>
-
-        </article>
 
         <div id="gallery-section">
-
+            <p>This is my gallery section</p>
         </div>
     </div>
-</body>
+
+    <footer>
+        <p id="disclaimer">
+            The product images shown are for illustration purposes only and may not be an exact representation of the
+            product.
+            Each image have their own copyrights.
+        </p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            debugger;
+          var x = document.getElementsByTagName("nav");
+          if (x[0].className === "topnav") {
+            x[0].className += " responsive";
+          } else {
+            x[0].className = "topnav";
+          }
+        }
+        </script>
 </body>
 
 </html>

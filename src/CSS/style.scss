@@ -5,20 +5,9 @@
 body {
   margin: 0px;
 }
-#header {
-  height: $header-height;
-}
 
-h1 {
-  font-size: $header-size;
-  color: $header-color;
-}
-h2 {
-  font-size: $header-size;
-  color: $header-size - 7px;
-}
-a {
-  color: $link-color;
+#disclaimer{
+  font-size: 12px;
 }
 
 p {
@@ -28,27 +17,31 @@ p {
 
 .container {
   margin: 60px 10px 0px 10px;
-  border: solid 3px blue;
+
   overflow: hidden;
   height: 2000px;
+  display: block;
+  padding: 5px;
 }
 
-section {
+.column {
   @extend %box-size;
+  img{
+    height: 100%;
+  }
 }
 
-article {
-  @extend %box-size;
-}
-
-header{
-  position: fixed;
-}
-
-#gallery-section{
+#gallery-section {
   clear: left;
-  margin: 60px 10px 0px 10px;
-  border: solid 3px blue;
   overflow: hidden;
-  height: 200px;
+  border: solid 3px blue;
+  height: 100vh;
+  text-align: center;
+  font-size: 12px;
+
+}
+#gallery-section:before {
+  height: 50px;
+  display: block;
+  content: "";
 }
