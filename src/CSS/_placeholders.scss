@@ -1,4 +1,5 @@
 %center {
+  text-align: center;
   margin: 0 auto;
   display: block;
 }
@@ -11,25 +12,24 @@
 
 %box-size {
   float: left;
-  height: 100px;
-  border: solid 1px #ccc;
-  background-color: #ececec;
+  height: 150px;
   text-align: center;
 
   @media (max-width: 639px){
-    @include number-columns(1, 5%);
+    height: 50px;
+    @include number-columns(4, 0%);
   }
 
   @media (min-width: 640px){
-    @include number-columns(2, 4%);
+    @include number-columns(4, 1%);
   }
 
   @media (min-width: 960px) and (max-width: 1200px){
-    @include number-columns(3, 2%);
+    @include number-columns(4, 2%);
   }
 
   @media (min-width: 1201px){
-    @include number-columns(4, 1%);
+    @include number-columns(4, 3%);
   }
 
 
